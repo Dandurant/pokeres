@@ -1,0 +1,179 @@
+/* Reset e base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(155, 213, 239, 255);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Título principal */
+h1 {
+    text-align: center;
+    padding: 20px 10px;
+}
+
+/* Menu */
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+}
+
+ul li {
+    text-align: center;
+}
+
+li a {
+    display: block;
+    padding: 0 1.5em;
+    line-height: 50px;
+    text-decoration: none;
+    color: black;
+}
+
+ul a:hover {
+    background-color: #ffb6c1;
+    color: white;
+    border: solid 1px white;
+}
+
+#atual {
+    background-color: #ffb6c1;
+}
+
+/* Texto geral */
+#texto, #texto2 {
+    font-size: 18px;
+    line-height: 30px;
+    text-align: justify;
+    padding: 20px;
+}
+
+/* Links personalizados */
+a#link {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover#link {
+    background-color: #ffb6c1;
+    color: white;
+    border: solid 1px white;
+}
+
+a:visited#link {
+    text-decoration: none;
+}
+
+/* Container de conteúdo */
+#container {
+    background-color: #fed4da;
+    border: solid 2.5px #ffb6c1;
+    padding: 20px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 1000px;
+}
+
+/* Imagens superiores */
+#Pokecatch,
+#pikachu {
+    display: block;
+    margin: 20px auto 10px auto;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Galeria de produtos/imagens */
+#produto {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 0;
+    list-style: none;
+}
+
+#produto li{
+
+    flex-basis: 300px; /* Define uma largura base para cada item da lista */
+
+}
+
+#place,
+.gabumon,
+.eddga,
+#trabalheimg,
+#trabalheimg2,
+#quemsomosimg {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Títulos com links (portfólio) */
+.link-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    font-size: 1.1em;
+    padding: 10px;
+}
+
+/* Linha separadora */
+#linha {
+    border-top: 4px solid #ffb6c1;
+    padding-top: 10px;
+    text-align: center;
+}
+
+/* Rodapé */
+footer {
+    background-color: #fff;
+    padding: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    li a {
+        padding: 1em;
+    }
+
+    #texto, #texto2 {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    #container {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .link-header {
+        flex-direction: column;
+        gap: 10px;
+        font-size: 1em;
+    }
+
+    #place, #trabalheimg, #trabalheimg2 {
+        width: 100%;
+    }
+
+
+}
